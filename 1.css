@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+}
+
+.conteiner {
+    margin: 0px 135px;
+    padding: 0;
+    padding-top: 40px;
+}
+
+.header { 
+    background-image: url(frame.png); /*цвет фона, можно вставить картинку*/
+    height: 100vh; /*картинка будет вставать вне контейнера, т.е. на весь экран*/
+    background-repeat: no-repeat; /*картинка не будет повторяться*/
+    background-size: cover; /*удаление белых полос по бокам*/
+}
+
+.menu-item {
+    color: #fff;
+    text-decoration: none; /*удаление подчеркивания текста*/
+    font-size: 20px;
+    padding-left: 0px;
+
+    margin-right: 120px;
+
+    transition: color 0.3s linear; /*плавность при изменении цвета*/
+
+}
+
+.menu-item:hover {
+    color: #AE9262; /*изменение цвета при наведении*/
+
+}
+
+.simple {
+    position:relative;
+    bottom: 80px;
+    font-size: 150px;
+    color: #fff;
+    margin-right: 120px;
+    padding: 0px 50px 0px 0px;
+    
+}
+.conteiner2 {
+    position:relative;
+    bottom: 955px;
+    color: #fff;
+    font-size: 30px;
+    margin-top: -116px;
+    margin-bottom: 50px; /*отступ вниз во внешней части*/
+}
+
+.button {
+    position:relative;
+    bottom: 956px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 16px 50px; /*отступ внутри кнопки - вверху и по бокам*/
+    margin-left: -9px;
+    margin-right: 35px;
+
+    width: 150px;
+    height: 50px;
+    border:none;
+    border:solid 2px #fff;
+    border-radius: 50px;
+    background: #fff(255, 255, 255,0);
+    font-size: 25px;
+
+    transition: color 0.5s linear;
+}
+.button:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.button3 {
+    position:relative; /*метод относительного позиционирования*/
+    bottom: 900px;
+    margin-left: -9px;
+
+    /* Rectangle 13 */
+    background: #D6B081;
+    border-radius: 50px;
+    padding: 20px 30px;
+
+    /* Перейти в каталог */
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Times New Roman';
+
+    color: #FFFFFF;
+    transition: color 0.3s linear;
+}
+
+.button3:hover {
+    background-color: #a3743a;
+}
+.scale {
+    position:relative;
+    left: 738px;
+    top: -558px;
+}
+
