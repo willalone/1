@@ -2,22 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Бухло</title>
     <link rel="stylesheet" href="1.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <style>
-      .scale {
-       transition: 1s; /* Время эффекта */
-      }
-      .scale:hover {
-       transform: scale(1.2); /* Увеличиваем масштаб */
-      }
-     </style>
   </head>
   <body>
-    <div class = "header">
+    <div class = "header" id="app">
       <div class="conteiner">
         <div class = "header-line">
           <div class="menu">
@@ -27,27 +20,28 @@
             <a class="menu-item"href="">Игристые вина</a>
           </div>
           <div class="simple">
-            <p>SimpleWine</p>
+            <p>{{ a }}</p>
           </div>
           <div class="img">
             <p>
-              <img src="1.png" alt="ебать" class="scale">
+              <img src="1.png" class="scale">
              </p>
           </div>
           <div class="conteiner2">
-              <p>
-                SimpleWine является прямым поставщиком и гарантирует <br> качество, подлинность, хранение и перевозку в <br> соответствии с мировыми стандартами
-              </p>
+              <p v-show="view" v-text="message"></p>
+          </div>
           </div>
           <div class="btn">
             <a class="button" href="">Купить</a>
             <a class="button" href="">Добавить в корзину</a>
           </div>
           <div class="page">
-            <a class="button3" href="file:///C:/Users/User/Desktop/1/catalog.html">Перейти в каталог</a>
+            <a class="button3" href="">Перейти в каталог</a>
           </div>
         </div>
       </div>
-    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="1.js"></script>
+  </div>
   </body>
 </html>
