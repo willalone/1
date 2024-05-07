@@ -13,15 +13,21 @@ body {
     height: 100vh; /*картинка будет вставать вне контейнера, т.е. на весь экран*/
     background-repeat: no-repeat; /*картинка не будет повторяться*/
     background-size: cover; /*удаление белых полос по бокам*/
+    height: 100%;
+    width: 100%;
+}
+
+.header-line {
+    display: grid;
 }
 
 .menu-item {
     color: #fff;
     text-decoration: none; /*удаление подчеркивания текста*/
-    font-size: 20px;
+    font-size: 25px;
     padding-left: 0px;
 
-    margin-right: 120px;
+    margin-right: 99px;
 
     transition: color 0.3s linear; /*плавность при изменении цвета*/
 
@@ -30,6 +36,11 @@ body {
 .menu-item:hover {
     color: #AE9262; /*изменение цвета при наведении*/
 
+}
+
+.img {
+    height: 100%;
+    width: 100%;
 }
 
 .simple {
@@ -103,3 +114,129 @@ body {
     top: -558px;
 }
 
+@media (max-width: 1200px) {
+    .adaptive {
+      width: 1000px;
+    }
+    .menu-item {
+      font-size: 20px;
+      margin-right: 41px;
+    }
+    .simple {
+      font-size: 100px;
+      bottom: 65px;
+    }
+    .conteiner2 {
+      display: block;
+      bottom: 895px;
+      font-size: 25px;
+    }
+    .button {
+      font-size: 20px;
+      bottom: 900px;
+    }
+    .button3 {
+      font-size: 30px;
+      bottom: 850px;
+    }
+    .scale {
+      left: 487px;
+      top: -526px;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .adaptive {
+      width: 768px;
+    }
+    .menu-item {
+      font-size: 20px;
+      margin-right: 39px;
+    }
+    .simple {
+      font-size: 100px;
+      bottom: 65px;
+    }
+    .conteiner2 {
+      font-size: 20px;
+      bottom: 939px;
+    }
+    .button {
+      font-size: 20px;
+      bottom: 940px;
+    }
+    .button3 {
+      font-size: 50px;
+      bottom: 860px;
+    }
+    .scale {
+      top: -500px;
+      left: 341px;
+      width: 97%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .adaptive {
+      width: 480px;
+    }
+    .menu-item {
+      font-size: 13px;
+      margin-right: 18px;
+    }
+    .simple {
+      font-size: 50px;
+      bottom: 18px;
+    }
+    .conteiner2 {
+      font-size: 15px;
+      bottom: 523px;
+    }
+    .button {
+      font-size: 10px;
+      bottom: 542px;
+    }
+    .button3 {
+      font-size: 20px;
+      bottom: 476px;
+    }
+    .scale {
+      left: 290px;
+      top: -300px;
+
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .adaptive {
+      width: 100%;
+    }
+    .menu-item {
+      font-size: 13px;
+      margin-right: 18px;
+    }
+    .simple {
+      font-size: 50px;
+      bottom: 18px;
+    }
+    .conteiner2 {
+      font-size: 15px;
+      bottom: 523px;
+    }
+    .button {
+      font-size: 10px;
+      bottom: 542px;
+    }
+    .button3 {
+      font-size: 20px;
+      bottom: 476px;
+    }
+    .scale {
+      left: 290px;
+      top: -300px;
+
+    }
+    .btn {
+      grid-template-columns: auto;
+    }
+  }
